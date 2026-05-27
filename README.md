@@ -46,15 +46,11 @@ Add the script to your WebAR page:
 
 ```html
 <script src="./webar-devtools.js"></script>
+or
+<script src="./webar-devtools.min.js"></script>
 ```
 
-For best results, load it before your WebAR framework scripts when possible:
 
-```html
-<script src="./webar-devtools.js"></script>
-<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-```
 
 
 ### Public API
@@ -70,17 +66,6 @@ WebARDevTools.addEvent(name, source, detail, solution);
 WebARDevTools.addTimeline(step, status, detail);
 WebARDevTools.exportReport();
 WebARDevTools.state;
-```
-
-### Example: Custom AR Event
-
-```js
-WebARDevTools.addEvent(
-  "Custom marker interaction",
-  "My WebAR app",
-  "The user tapped the 3D model",
-  "Use this event to understand user behavior inside the AR experience."
-);
 ```
 
 ### Recommended Use Cases
@@ -150,36 +135,8 @@ Agrega el script a tu página WebAR:
 
 ```html
 <script src="./webar-devtools.js"></script>
-```
-
-Para mejores resultados, cárgalo antes de tus librerías WebAR cuando sea posible:
-
-```html
-<script src="./webar-devtools.js"></script>
-<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-```
-
-### Configuración Opcional
-
-Puedes personalizar los enlaces antes de cargar el script:
-
-```html
-<script>
-window.WebARDevToolsConfig = {
-  links: {
-    site: "https://realidad-aumentada.com.co",
-    blog: "https://blog.realidad-aumentada.com.co",
-    donations: {
-      nequi: "tel:3159699392",
-      paypal: "https://www.paypal.com/paypalme/realidadaumentada",
-      buyMeACoffee: "https://www.buymeacoffee.com/ingcarlosreina",
-      patreon: "https://www.patreon.com/c/realidadaumentadaempezandodesdecero"
-    }
-  }
-};
-</script>
-<script src="./webar-devtools.js"></script>
+o puedes utilizar
+<script src="./webar-devtools.min.js"></script>
 ```
 
 ### API Pública
@@ -241,6 +198,9 @@ No todos los navegadores exponen la misma información, especialmente en iOS.
 
 ## License / Licencia
 
-Add your preferred license here before publishing the project.
+//WebAR Devetools.js Es una herramienta de diagnostico creada por IngCarlosReina de Realidad Aumentada Empezando Desde Cero.
+//Creative Commons Atribución-NoComercial (CC BY-NC 4.0) y PolyForm Noncommercial License.  Solo permitida para el uso comercial de su creador IngCarlosReina.
+//Sitio Web oficial: https://realidad-aumentada.com.co
+//Blog de Realidad Aumentada: https://blog.realidad-aumentada.com.co
+//Gracias por apoyar mi trabajo con tus donaciones.
 
-Agrega aquí la licencia que prefieras antes de publicar el proyecto.
