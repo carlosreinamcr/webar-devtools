@@ -1,4 +1,4 @@
-# WebAR DevTools
+# JavaScript diagnostic console for WebAR experiences - WebAR DevTools
 
 WebAR DevTools is a lightweight JavaScript diagnostic console for WebAR experiences. It helps developers inspect camera access, WebGL support, network requests, asset loading, performance, MindAR tracking events, marker stability, compatibility, and technical reports directly inside the browser.
 
